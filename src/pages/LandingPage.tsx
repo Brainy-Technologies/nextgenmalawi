@@ -1,4 +1,4 @@
-import { LightBulbIcon, BookmarkIcon, RssIcon, CheckIcon, XIcon, ChatAltIcon } from '@heroicons/react/outline'
+import { CheckIcon, XIcon, ChatAltIcon, PhoneIcon, DeviceMobileIcon, BriefcaseIcon, RssIcon, GlobeAltIcon, DesktopComputerIcon, BookmarkIcon, LightBulbIcon, DocumentAddIcon, BadgeCheckIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Help from '../assets/help.png'
@@ -47,61 +47,52 @@ export default function LandingPage() {
                     </div>
                 </div>
                 <div className="sm:px-24 px-5 sm:py-10 py-5">
-                    {/* <div className="w-full">
+                    <div className="w-full">
                     <h3 className="font-bold text-3xl text-center">
-                        We are here exclusively for you
+                        Exclusively for your software needs
                     </h3>
-                    <div className="w-full flex justify-center sm:px-24 px-5 sm:py-10 py-5 self-center">
-                        <div className="w-1/3 items-center">
-                        <div className="flex items-center">
-                            <div className="bg-blue-400 rounded-full items-center p-5">
-                            <LightBulbIcon className='w-8 h-8 text-white'/>
+                    <div className="w-full sm:flex justify-center sm:px-24 px-5 sm:py-10 py-5 self-center">
+                        <div className="sm:w-1/3 mb-3 flex flex-col justify-center items-center">
+                            <div className="bg-blue-400 w-14 h-14 flex rounded-full items-center justify-center">
+                                <LightBulbIcon className='w-8 h-8 text-white'/>
                             </div>
-                            <div className="w-full border-t-2 border-dotted mt-2 h-2"></div>
+                            <h3 className="font-semibold text-lg mt-2">1. Create a project</h3>
+                            <p className='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit perspiciatis ducimus temporibus optio perferendis quis illo harum recusandae, alias magni nostrum sunt nam. Vel sit praesentium amet iure quas?
+                            </p>
                         </div>
-                        <h3 className="font-semibold text-lg mt-2">1. Create a project</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet
-                        </p>
-                        </div>
-                        <div className="w-1/3">
-                        <div className="flex items-center">
-                            <div className="bg-blue-400 rounded-full items-center p-5">
-                            <BookmarkIcon className='w-8 h-8 text-white'/>
+                        <div className="sm:w-1/3 mb-3 flex flex-col justify-center items-center">
+                            <div className="bg-blue-400 w-14 h-14 flex rounded-full items-center justify-center">
+                                <DocumentAddIcon className='w-8 h-8 text-white'/>
                             </div>
-                            <div className="w-full border-t-2 border-dotted mt-2 h-2"></div>
+                            <h3 className="font-semibold text-lg mt-2">2. Fill project form</h3>
+                            <p className='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro tenetur, quidem quae fugit dicta nisi illo commodi aspernatur? Ipsa repellat nam numquam mollitia voluptates reprehenderit perspiciatis a dignissimos tenetur?
+                            </p>
                         </div>
-                        <h3 className="font-semibold text-lg mt-2">1. Create a project</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet 
-                        </p>
-                        </div>
-                        <div className="w-3/3">
-                        <div className="flex items-center">
-                            <div className="bg-blue-400 rounded-full items-center p-5">
-                            <RssIcon className='w-8 h-8 text-white'/>
+                        <div className="sm:w-1/3 flex flex-col justify-center items-center">
+                            <div className="bg-blue-400 w-14 h-14 flex rounded-full items-center justify-center">
+                                <BadgeCheckIcon className='w-8 h-8 text-white'/>
                             </div>
-                        </div>
-                        <h3 className="font-semibold text-lg mt-2">1. Create a project</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur,
-                        </p>
+                            <h3 className="font-semibold text-lg mt-2">3. Submit</h3>
+                            <p className='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam voluptatum quasi culpa maiores, dignissimos at nam ipsa animi? Quae, aperiam sequi vel quaerat numquam consectetur ea error nobis magnam.
+                            </p>
                         </div>
                     </div>
-                    </div> */}
+                    </div>
 
 
-                    <div>
-                    <h3 className="font-bold text-3xl text-center">Help is on the way</h3>
-
+                    <div className='border-t pt-10'>
+                
                     <div className="w-full sm:flex mt-3 mb-3">
                         <div className="sm:w-2/5">
                         <img src={Help} alt="help-illustration" className='relative'/>
                         </div>
                         <div className="sm:w-3/5">
                         <p>We are here to provide the best tech services you can ever find in Malawi and abroad. Our prices are fair justified with the highest quality of services that we provide to all our clients.</p>
-                        <div className="w-full flex space-x-2">
-                            <div className="w-1/2 space-y-2">
+                        <div className="w-full sm:flex space-x-2">
+                            <div className="sm:w-1/2 w-full sm:space-y-2">
                             <h2 style={{ fontFamily: 'Architects Daughter' }} className='mt-2 font-semibold'>Build your business</h2>
                             <div className="flex">
                                 <CheckIcon className='w-8 h-8 text-green-500 mr-2'/>
@@ -112,7 +103,7 @@ export default function LandingPage() {
                                 <p>In a fast growing tech world, your business might just have the chance to sprout</p>
                             </div>
                             </div>
-                            <div className="w-1/2 space-y-2">
+                            <div className="sm:w-1/2 w-full space-y-2">
                             <h2 style={{ fontFamily: 'Architects Daughter' }} className='mt-2 font-semibold'>Build your business</h2>
                             <div className="flex">
                                 <CheckIcon className='w-8 h-8 text-green-500 mr-2'/>
@@ -126,6 +117,52 @@ export default function LandingPage() {
                         </div>
                         </div>
                     </div>
+                    </div>
+
+                    <div className='pt-10 pb-10'>
+                        <h1 className="antialiased font-bold text-3xl text-center decoration-8">
+                            Our goals in software development
+                        </h1>
+                        <p className="mt-2 text-center self-center leading-8 justify-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</p>
+                        <div className="flex flex-wrap flex-row space-y-2 sm:space-x-5 space-x-2 items-center justify-center mt-2">
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                                <DeviceMobileIcon className='text-blue-400 w-5 h-5'/>
+                                <p>Mobile apps</p>
+                            </button>
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                                <DesktopComputerIcon className='text-blue-400 w-5 h-5'/>
+                                <p>Desktop apps</p>
+                            </button>
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                                <GlobeAltIcon className='text-blue-400 w-5 h-5'/>
+                                <p>Web development</p>
+                            </button>
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                                <RssIcon className='text-blue-400 w-5 h-5'/>
+                                <p>USSD apps</p>
+                            </button>
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                                <BriefcaseIcon className='text-blue-400 w-5 h-5'/>
+                                <p>Maintenance</p>
+                            </button>
+                        </div>
+
+                        <div className="mt-3 sm:flex sm:h-72 border">
+                            <div className="sm:w-1/2 order-1">
+                                <img className='h-72 w-full object-cover' src="https://preview.cruip.com/open-pro/images/tabs-image-01.jpg" alt="www" />
+                            </div>
+                            <div className='sm:w-1/2 p-10 space-y-3'>
+                                <h1 className='text-lg font-semibold truncate'>Optimize and scale, easy to start</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200'>Learn more 
+                                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                        </div>
                     </div>
 
                     <div className="sm:py-10 py-5 sm:px-24 px-5 flex-col flex items-center border-t">
@@ -150,7 +187,7 @@ export default function LandingPage() {
                         </div>
                         <div>
                             <div className="flex space-x-1 items-center">
-                            <div className='w-2 h-2 rounded-full bg-blue-400'></div>
+                            <div className='w-2 h-2 rounded-full bg-red-400'></div>
                             <h1 className="text-lg font-bold">
                                 For Developers
                             </h1>
@@ -159,7 +196,7 @@ export default function LandingPage() {
                         </div>
                         <div>
                             <div className="flex space-x-1 items-center">
-                            <div className='w-2 h-2 rounded-full bg-blue-400'></div>
+                            <div className='w-2 h-2 rounded-full bg-yellow-400'></div>
                             <h1 className="text-lg font-bold">
                                 For Developers
                             </h1>
@@ -177,9 +214,9 @@ export default function LandingPage() {
                             Refreshing news for developers, designers and customers
                         </h1>
 
-                        <div className="flex flex-wrap mt-10">
+                        <div className="flex flex-wrap mt-10 space-y-3">
                             <div className="sm:p-4 md:w-1/3">
-                                <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
+                                <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
@@ -208,7 +245,7 @@ export default function LandingPage() {
                                 </div>
                             </div>
                             <div className="sm:p-4 md:w-1/3">
-                                <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
+                                <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
@@ -237,7 +274,7 @@ export default function LandingPage() {
                                 </div>
                             </div>
                             <div className="sm:p-4 md:w-1/3">
-                                <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
+                                <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
@@ -270,8 +307,8 @@ export default function LandingPage() {
 
                     {/* End of blog section */}
 
-                    <div className="sm:py-10 py-5 sm:px-24 px-5">
-                    <div className="bg-blue-400 p-10 sm:flex sm:space-x-10">
+                    <div className="">
+                    <div className="bg-blue-400 p-20 sm:flex sm:space-x-10">
                         <div>
                         <h1 className='text-2xl text-white'>Stay in the loop</h1>
                         <p className='text-white mt-2'>Join our newsletter to get top news before anyone else.</p>
