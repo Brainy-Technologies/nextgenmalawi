@@ -8,5 +8,7 @@ module.exports = {
       'body': ['Open Sans'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-hero-patterns'),
+  ],
 }

@@ -1,7 +1,24 @@
-import { CheckIcon, XIcon, ChatAltIcon, PhoneIcon, DeviceMobileIcon, BriefcaseIcon, RssIcon, GlobeAltIcon, DesktopComputerIcon, BookmarkIcon, LightBulbIcon, DocumentAddIcon, BadgeCheckIcon } from '@heroicons/react/outline'
-import { useState } from 'react'
+import { 
+    CheckIcon, 
+    XIcon, 
+    ChatAltIcon, 
+    DeviceMobileIcon, 
+    BriefcaseIcon, 
+    RssIcon, GlobeAltIcon, 
+    DesktopComputerIcon, 
+    LightBulbIcon, 
+    DocumentAddIcon, 
+    BadgeCheckIcon
+ } from '@heroicons/react/outline'
+
+import { 
+    useState
+ } from 'react'
+
 import { Link } from 'react-router-dom'
+
 import Help from '../assets/help.png'
+
 import LandingPageFooter from './LandingPageFooter'
 import LandingPageHeader from './LandingPageHeader'
 
@@ -26,7 +43,7 @@ export default function LandingPage() {
                             <div className="rounded-md shadow">
                             <Link
                                 to="#"
-                                className="focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-white bg-blue-400 hover:bg-blue-400"
+                                className="focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-white bg-blue-500 hover:bg-blue-400 duration-75 transition"
                             >
                                 Get started
                             </Link>
@@ -43,7 +60,7 @@ export default function LandingPage() {
                         </div>
                     </main>
                     <div className="w-full sm:p-10 pt-4">
-                        <img src='https://lvivity.com/wp-content/uploads/2021/09/tailor-made-software-development.jpg' alt='hero'/>
+                        <img className='hover:scale-105 transition duration-100' src='https://lvivity.com/wp-content/uploads/2021/09/tailor-made-software-development.jpg' alt='hero'/>
                     </div>
                 </div>
                 <div className="sm:px-24 px-5 sm:py-10 py-5">
@@ -53,28 +70,28 @@ export default function LandingPage() {
                     </h3>
                     <div className="w-full sm:flex justify-center sm:px-24 px-5 sm:py-10 py-5 self-center">
                         <div className="sm:w-1/3 mb-3 flex flex-col justify-center items-center">
-                            <div className="bg-blue-400 w-14 h-14 flex rounded-full items-center justify-center">
-                                <LightBulbIcon className='w-8 h-8 text-white'/>
+                            <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
+                                <LightBulbIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2">1. Create a project</h3>
+                            <h3 className="font-semibold text-lg mt-2">Create a project</h3>
                             <p className='text-center'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit perspiciatis ducimus temporibus optio perferendis quis illo harum recusandae, alias magni nostrum sunt nam. Vel sit praesentium amet iure quas?
                             </p>
                         </div>
                         <div className="sm:w-1/3 mb-3 flex flex-col justify-center items-center">
-                            <div className="bg-blue-400 w-14 h-14 flex rounded-full items-center justify-center">
-                                <DocumentAddIcon className='w-8 h-8 text-white'/>
+                            <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
+                                <DocumentAddIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2">2. Fill project form</h3>
+                            <h3 className="font-semibold text-lg mt-2">Fill project form</h3>
                             <p className='text-center'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro tenetur, quidem quae fugit dicta nisi illo commodi aspernatur? Ipsa repellat nam numquam mollitia voluptates reprehenderit perspiciatis a dignissimos tenetur?
                             </p>
                         </div>
                         <div className="sm:w-1/3 flex flex-col justify-center items-center">
-                            <div className="bg-blue-400 w-14 h-14 flex rounded-full items-center justify-center">
-                                <BadgeCheckIcon className='w-8 h-8 text-white'/>
+                            <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
+                                <BadgeCheckIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2">3. Submit</h3>
+                            <h3 className="font-semibold text-lg mt-2">Submit</h3>
                             <p className='text-center'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam voluptatum quasi culpa maiores, dignissimos at nam ipsa animi? Quae, aperiam sequi vel quaerat numquam consectetur ea error nobis magnam.
                             </p>
@@ -217,28 +234,18 @@ export default function LandingPage() {
                         <div className="flex flex-wrap mt-10 space-y-3">
                             <div className="sm:p-4 md:w-1/3">
                                 <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
-                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://preview.cruip.com/open-pro/images/news-01.jpg" alt="blog"/>
                                 <div className="p-6">
-                                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-                                    <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    <h2 className="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">MOBILE APP DEVELOPMENT</h2>
+                                    <h1 className="text-2xl font-semibold mb-3">Better UI & UIX for android applications</h1>
+                                    <p className="text-md mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
-                                    <button className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </button>
-                                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                        <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>1.2K
+                                        <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
+                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-200">
+                                        Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                                        <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                        </svg>6
+                                        12th January 2021
                                     </span>
                                     </div>
                                 </div>
@@ -246,28 +253,18 @@ export default function LandingPage() {
                             </div>
                             <div className="sm:p-4 md:w-1/3">
                                 <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
-                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://preview.cruip.com/open-pro/images/news-01.jpg" alt="blog"/>
                                 <div className="p-6">
-                                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                                    <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                                    <div className="flex items-center flex-wrap">
-                                    <button className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </button>
-                                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                        <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>1.2K
+                                    <h2 className="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">MOBILE APP DEVELOPMENT</h2>
+                                    <h1 className="text-2xl font-semibold mb-3">Better UI & UIX for android applications</h1>
+                                    <p className="text-md mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div className="flex items-center flex-wrap ">
+                                        <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
+                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-200">
+                                        Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                                        <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                        </svg>6
+                                        12th January 2021
                                     </span>
                                     </div>
                                 </div>
@@ -275,28 +272,18 @@ export default function LandingPage() {
                             </div>
                             <div className="sm:p-4 md:w-1/3">
                                 <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
-                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+                                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://preview.cruip.com/open-pro/images/news-01.jpg" alt="blog"/>
                                 <div className="p-6">
-                                    <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-                                    <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                                    <h2 className="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">MOBILE APP DEVELOPMENT</h2>
+                                    <h1 className="text-2xl font-semibold mb-3">Better UI & UIX for android applications</h1>
+                                    <p className="text-md mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
-                                    <button className="text-blue-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </button>
-                                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                        <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>1.2K
+                                        <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
+                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-200">
+                                        Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                                        <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                        </svg>6
+                                        12th January 2021
                                     </span>
                                     </div>
                                 </div>
@@ -307,10 +294,13 @@ export default function LandingPage() {
 
                     {/* End of blog section */}
 
-                    <div className="">
-                    <div className="bg-blue-400 p-20 sm:flex sm:space-x-10">
+                    <div className="heropattern-circuitboard-blue-400 bg-repeat">
+                    <div className="bg-blue-400 m-20 p-20 sm:flex sm:space-x-10">
                         <div>
-                        <h1 className='text-2xl text-white'>Stay in the loop</h1>
+                        <div className="flex">
+                            <h1 className='text-2xl text-white'>Stay in the loop</h1>
+                            {/* <div className="rounded-full w-12 h-12 bg-red-400 border-8 animate-ping border-red-300"></div> */}
+                        </div>
                         <p className='text-white mt-2'>Join our newsletter to get top news before anyone else.</p>
                         </div>
                         <div className="flex mt-2 xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
@@ -356,7 +346,7 @@ export default function LandingPage() {
 
                     <button 
                         onClick={()=> setShowMessageBubble(!showMessageBubble)}
-                        className="fixed focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 items-center flex justify-center  bottom-10 rounded-full border right-2 w-14 h-14 bg-blue-400">
+                        className="fixed focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 items-center flex justify-center  bottom-10 rounded-full border-8 border-blue-300 right-2 w-14 h-14 bg-blue-400">
                         <ChatAltIcon className='text-white w-6 h-6'/>
                     </button>
 
