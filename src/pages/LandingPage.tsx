@@ -102,36 +102,49 @@ export default function LandingPage() {
 
                     <div className='border-t pt-10'>
                 
-                    <div className="w-full sm:flex mt-3 mb-3">
-                        <div className="sm:w-2/5">
-                        <img src={Help} alt="help-illustration" className='relative'/>
+                    <div className="w-full sm:flex mt-3 mb-3 space-x-4 border-b pb-10">
+                        <div className="sm:w-2/5 pb-3 justify-center flex items-center object-cover bg-cover" style={{ backgroundImage: `url('https://www.incimages.com/uploaded_files/image/1920x1080/IN0316LPO03-web_80434.jpg')` }}>
+                            <div className="w-28 h-28 m-10 transition-all duration-150 border-8 border-blue-400 bg-blue-500 rounded-full ring-8"></div>
                         </div>
-                        <div className="sm:w-3/5">
-                        <p>We are here to provide the best tech services you can ever find in Malawi and abroad. Our prices are fair justified with the highest quality of services that we provide to all our clients.</p>
-                        <div className="w-full sm:flex space-x-2">
-                            <div className="sm:w-1/2 w-full sm:space-y-2">
-                            <h2 style={{ fontFamily: 'Architects Daughter' }} className='mt-2 font-semibold'>Build your business</h2>
-                            <div className="flex">
-                                <CheckIcon className='w-8 h-8 text-green-500 mr-2'/>
-                                <p>In a fast growing tech world, your business might just have the chance to sprout</p>
+                        <div className="sm:w-3/5 space-y-2">
+                            <h1 className="text-blue-400 text-lg" style={{ fontFamily: 'Architects Daughter' }}>Lightening fast workflow</h1>
+                            <h3 className="text-2xl font-bold text-relaxed">Say hello to this approach</h3>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                            </p>
+                            <div className="flex flex-wrap space-x-3">
+                                <div className="flex items-center space-x-2">
+                                    <CheckIcon className='w-5 h-5 text-green-500'/>
+                                    <p className='font-medium'>Clean code</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <CheckIcon className='w-5 h-5 text-green-500'/>
+                                    <p className='font-medium'>Clean code</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <CheckIcon className='w-5 h-5 text-green-500'/>
+                                    <p className='font-medium'>Clean code</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <CheckIcon className='w-5 h-5 text-green-500'/>
+                                    <p className='font-medium'>Clean code</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <CheckIcon className='w-5 h-5 text-green-500'/>
+                                    <p className='font-medium'>Clean code</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <CheckIcon className='w-5 h-5 text-green-500'/>
+                                    <p className='font-medium'>Clean code</p>
+                                </div>
                             </div>
-                            <div className="flex">
-                                <CheckIcon className='w-8 h-8 text-green-500 mr-2'/>
-                                <p>In a fast growing tech world, your business might just have the chance to sprout</p>
+                            <div className="flex space-x-4">
+                                <img src="https://preview.cruip.com/open-pro/images/features-avatar.jpg" alt="dude" className="rounded-full w-6 h-6" />
+                                <div>
+                                    <p className="text-sm italic">"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing"</p>
+                                    <p className="mt-2">Kelvin Chidothi <span className="text-blue-400">- Android developer</span></p>
+                                </div>
                             </div>
-                            </div>
-                            <div className="sm:w-1/2 w-full space-y-2">
-                            <h2 style={{ fontFamily: 'Architects Daughter' }} className='mt-2 font-semibold'>Build your business</h2>
-                            <div className="flex">
-                                <CheckIcon className='w-8 h-8 text-green-500 mr-2'/>
-                                <p>In a fast growing tech world, your business might just have the chance to sprout</p>
-                            </div>
-                            <div className="flex">
-                                <CheckIcon className='w-8 h-8 text-green-500 mr-2'/>
-                                <p>In a fast growing tech world, your business might just have the chance to sprout</p>
-                            </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     </div>
@@ -171,7 +184,7 @@ export default function LandingPage() {
                             <div className='sm:w-1/2 p-10 space-y-3'>
                                 <h1 className='text-lg font-semibold truncate'>Optimize and scale, easy to start</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200'>Learn more 
+                                <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
                                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>
@@ -295,7 +308,7 @@ export default function LandingPage() {
                     {/* End of blog section */}
 
                     <div className="heropattern-circuitboard-blue-400 bg-repeat">
-                    <div className="bg-blue-400 m-20 p-20 sm:flex sm:space-x-10">
+                    <div className="bg-blue-400 sm:m-20 m-5 sm:p-20 p-5 sm:flex sm:space-x-10">
                         <div>
                         <div className="flex">
                             <h1 className='text-2xl text-white'>Stay in the loop</h1>
@@ -305,7 +318,7 @@ export default function LandingPage() {
                         </div>
                         <div className="flex mt-2 xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                         <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4">
-                            <input placeholder='Your best email...' type="text" id="footer-field" name="footer-field" className="w-full focus:ring-offset-2 bg-gray-100 bg-opacity-50 rounded-none border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-blue-200 focus:border-blue-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                            <input placeholder='Your best email' type="text" id="footer-field" name="footer-field" className="w-full  bg-opacity-50 rounded-none border border-gray-300 outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                         </div>
                         <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-400 border-0 py-2 px-3 focus:outline-none hover:bg-blue-400 rounded-none">Subscribe</button>
                         </div>
