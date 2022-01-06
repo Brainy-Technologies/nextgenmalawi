@@ -17,7 +17,7 @@ import {
 
 import { Link } from 'react-router-dom'
 
-import Help from '../assets/help.png'
+import User from '../assets/avatar.jpg'
 
 import LandingPageFooter from './LandingPageFooter'
 import LandingPageHeader from './LandingPageHeader'
@@ -115,33 +115,33 @@ export default function LandingPage() {
                             <div className="flex flex-wrap space-x-3">
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean code</p>
+                                    <p className='font-medium'>Impressive User Interface</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean code</p>
+                                    <p className='font-medium'>Great Interaction</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean code</p>
+                                    <p className='font-medium'>Fast networking speed</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean code</p>
+                                    <p className='font-medium'>Clean & maintainable app</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean code</p>
+                                    <p className='font-medium'>Versioning</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean code</p>
+                                    <p className='font-medium'>App distribution</p>
                                 </div>
                             </div>
                             <div className="flex space-x-4">
-                                <img src="https://preview.cruip.com/open-pro/images/features-avatar.jpg" alt="dude" className="rounded-full w-6 h-6" />
+                                <img src={User} alt="kelvin-chidothi" className="rounded-full w-10 h-10" />
                                 <div>
-                                    <p className="text-sm italic">"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing"</p>
+                                    <p className="text-sm italic">"A clean app with android architect i.e., MVVM"</p>
                                     <p className="mt-2">Kelvin Chidothi <span className="text-blue-400">- Android developer</span></p>
                                 </div>
                             </div>
