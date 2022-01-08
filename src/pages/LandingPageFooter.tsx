@@ -3,63 +3,63 @@ import { Link } from "react-router-dom";
 export default function LandingPageFooter() {
 
     return (
-        <div>
-            <footer className="text-gray-600 body-font border-t">
+        <div className="bg-black">
+            <footer className="border-gray-800 body-font border-t">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-wrap md:text-left text-center order-first">
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">USEFUL LINKS</h2>
+                        <h2 className="title-font font-medium text-blue-400 tracking-widest text-sm mb-3">USEFUL LINKS</h2>
                         <nav className="list-none mb-10">
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Current Projects</Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Current Projects</Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Our Products </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Our Products </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Recent Stories </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Recent Stories </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Contact Us </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Contact Us </Link>
                         </li>
                         </nav>
                     </div>
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SERVICES</h2>
+                        <h2 className="title-font font-medium text-blue-400 tracking-widest text-sm mb-3">SERVICES</h2>
                         <nav className="list-none mb-10">
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Web Development </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Web Development </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Mobile App development </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Mobile App development </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Desktop App Development </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Desktop App Development </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">USSD Development </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">USSD Development </Link>
                         </li>
                         </nav>
                     </div>
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">POLICY & PRIVACY</h2>
+                        <h2 className="title-font font-medium text-blue-400 tracking-widest text-sm mb-3">POLICY & PRIVACY</h2>
                         <nav className="list-none mb-10">
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Usage Policy </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Usage Policy </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Privacy </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Privacy </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Website Copyrights </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Website Copyrights </Link>
                         </li>
                         <li>
-                            <Link to='#' className="text-gray-600 hover:text-gray-800">Agreements </Link>
+                            <Link to='#' className="text-gray-400 hover:text-gray-300">Agreements </Link>
                         </li>
                         </nav>
                     </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 uppercase">subscribe to our newsletters</h2>
+                    <div className="lg:w-1/4 md:w-1/2 w-full px-4 bg-">
+                        <h2 className="title-font font-medium text-blue-400 tracking-widest text-sm mb-3 uppercase">subscribe to our newsletters</h2>
                         <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                         <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4">
                             <input type="text" id="footer-field" name="footer-field" className="w-full focus:ring-offset-2 bg-gray-100 bg-opacity-50 rounded-none border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-blue-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
@@ -69,7 +69,7 @@ export default function LandingPageFooter() {
                     </div>
                     </div>
                 </div>
-                <div className="bg-gray-100">
+                <div className="">
                     <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
                     <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© {new Date().getFullYear() } NEXTGENERATIONS MALAWI
                     </p>

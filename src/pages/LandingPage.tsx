@@ -29,14 +29,14 @@ export default function LandingPage() {
     return (
         <div>
             <LandingPageHeader/>
-            <div>
-                <div className="sm:px-24 px-5 sm:py-10 py=5">
-                    <main className="justify-center items-center flex flex-col mt-10">
+            <div className='bg-black'>
+                <div className="sm:px-24 px-5 sm:py-10">
+                    <main className="justify-center items-center flex flex-col">
                         <div className="sm:text-center lg:text-left">
                         <h1 className="text-3xl text-center font-bold">
-                            <span className="block xl:inline text-center">We are centuries beyond</span>
+                            <span className="block xl:inline text-center text-gray-100">We are centuries beyond</span>
                         </h1>
-                        <p className="mt-3 text-lg text-center">
+                        <p className="mt-3 text-lg text-center text-gray-300">
                             Digitize your businesses/firms from manual or paper work to automated digitized systems. Grow your firm with us today!
                         </p>
                         <div className="mt-5 sm:mt-8 sm:flex items-center justify-center">
@@ -51,7 +51,7 @@ export default function LandingPage() {
                             <div className="mt-3 sm:mt-0 sm:ml-3">
                             <Link
                                 to="#"
-                                className="focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-blue-400 bg-blue-100 hover:bg-blue-200"
+                                className="focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-blue-400 bg-gray-800 hover:bg-gray-900"
                             >
                                 Create a project
                             </Link>
@@ -65,7 +65,7 @@ export default function LandingPage() {
                 </div>
                 <div className="sm:px-24 px-5 sm:py-10 py-5">
                     <div className="w-full">
-                    <h3 className="font-bold text-3xl text-center">
+                    <h3 className="font-bold text-3xl text-center text-gray-100">
                         Exclusively for your software needs
                     </h3>
                     <div className="w-full sm:flex justify-center sm:px-24 px-5 sm:py-10 py-5 self-center">
@@ -73,8 +73,8 @@ export default function LandingPage() {
                             <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
                                 <LightBulbIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2">Create a project</h3>
-                            <p className='text-center'>
+                            <h3 className="font-semibold text-lg mt-2 text-gray-200">Create a project</h3>
+                            <p className='text-center text-gray-300'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit perspiciatis ducimus temporibus optio perferendis quis illo harum recusandae, alias magni nostrum sunt nam. Vel sit praesentium amet iure quas?
                             </p>
                         </div>
@@ -82,8 +82,8 @@ export default function LandingPage() {
                             <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
                                 <DocumentAddIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2">Fill project form</h3>
-                            <p className='text-center'>
+                            <h3 className="font-semibold text-lg mt-2 text-gray-200">Fill project form</h3>
+                            <p className='text-center text-gray-300'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro tenetur, quidem quae fugit dicta nisi illo commodi aspernatur? Ipsa repellat nam numquam mollitia voluptates reprehenderit perspiciatis a dignissimos tenetur?
                             </p>
                         </div>
@@ -91,8 +91,8 @@ export default function LandingPage() {
                             <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
                                 <BadgeCheckIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2">Submit</h3>
-                            <p className='text-center'>
+                            <h3 className="font-semibold text-lg mt-2 text-gray-200">Submit</h3>
+                            <p className='text-center text-gray-300'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam voluptatum quasi culpa maiores, dignissimos at nam ipsa animi? Quae, aperiam sequi vel quaerat numquam consectetur ea error nobis magnam.
                             </p>
                         </div>
@@ -100,49 +100,49 @@ export default function LandingPage() {
                     </div>
 
 
-                    <div className='border-t pt-10'>
+                    <div className='border-t border-gray-800 pt-10'>
                 
-                    <div className="w-full sm:flex mt-3 mb-3 space-x-4 border-b pb-10">
+                    <div className="w-full sm:flex mt-3 mb-3 space-x-4 border-b border-gray-800 pb-10">
                         <div className="sm:w-2/5 pb-3 justify-center flex items-center object-cover bg-cover" style={{ backgroundImage: `url('https://www.incimages.com/uploaded_files/image/1920x1080/IN0316LPO03-web_80434.jpg')` }}>
                             <div className="w-28 h-28 m-10 transition-all duration-150 border-8 border-blue-400 bg-blue-500 rounded-full ring-8"></div>
                         </div>
                         <div className="sm:w-3/5 space-y-2">
                             <h1 className="text-blue-400 text-lg" style={{ fontFamily: 'Architects Daughter' }}>Lightening fast workflow</h1>
-                            <h3 className="text-2xl font-bold text-relaxed">Say hello to this approach</h3>
-                            <p>
+                            <h3 className="text-2xl font-bold text-relaxed text-gray-200">Say hello to this approach</h3>
+                            <p className='text-gray-300'>
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
                             </p>
                             <div className="flex flex-wrap space-x-3">
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Impressive User Interface</p>
+                                    <p className='font-medium text-gray-300'>Impressive User Interface</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Great Interaction</p>
+                                    <p className='font-medium text-gray-300'>Great Interaction</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Fast networking speed</p>
+                                    <p className='font-medium text-gray-300'>Fast networking speed</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Clean & maintainable app</p>
+                                    <p className='font-medium text-gray-300'>Clean & maintainable app</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>Versioning</p>
+                                    <p className='font-medium text-gray-300'>Versioning</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <CheckIcon className='w-5 h-5 text-green-500'/>
-                                    <p className='font-medium'>App distribution</p>
+                                    <p className='font-medium text-gray-300'>App distribution</p>
                                 </div>
                             </div>
                             <div className="flex space-x-4">
-                                <img src={User} alt="kelvin-chidothi" className="rounded-full w-10 h-10" />
+                                <img src={User} alt="kelvin-chidothi" className="rounded-full w-10 h-10 object-cover" />
                                 <div>
-                                    <p className="text-sm italic">"A clean app with android architect i.e., MVVM"</p>
-                                    <p className="mt-2">Kelvin Chidothi <span className="text-blue-400">- Android developer</span></p>
+                                    <p className="text-sm italic text-gray-400">"A clean app with android architect i.e., MVVM"</p>
+                                    <p className="mt-2 text-gray-200">Kelvin Chidothi <span className="text-blue-400">- Android developer</span></p>
                                 </div>
                             </div>
                         </div>
@@ -150,34 +150,34 @@ export default function LandingPage() {
                     </div>
 
                     <div className='pt-10 pb-10'>
-                        <h1 className="antialiased font-bold text-3xl text-center decoration-8">
+                        <h1 className="antialiased font-bold text-3xl text-center decoration-8 text-gray-100">
                             Our goals in software development
                         </h1>
-                        <p className="mt-2 text-center self-center leading-8 justify-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</p>
+                        <p className="mt-2 text-center self-center leading-8 justify-center text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</p>
                         <div className="flex flex-wrap flex-row space-y-2 sm:space-x-5 space-x-2 items-center justify-center mt-2">
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
                                 <DeviceMobileIcon className='text-blue-400 w-5 h-5'/>
-                                <p>Mobile apps</p>
+                                 <p className='text-gray-400'>Mobile apps</p>
                             </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
                                 <DesktopComputerIcon className='text-blue-400 w-5 h-5'/>
-                                <p>Desktop apps</p>
+                                 <p className='text-gray-400'>Desktop apps</p>
                             </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
                                 <GlobeAltIcon className='text-blue-400 w-5 h-5'/>
-                                <p>Web development</p>
+                                 <p className='text-gray-400'>Web development</p>
                             </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
                                 <RssIcon className='text-blue-400 w-5 h-5'/>
-                                <p>USSD apps</p>
+                                 <p className='text-gray-400'>USSD apps</p>
                             </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-100 rounded-full p-2 bg-gray-100 flex space-x-2 flex-row items-center justify-center">
+                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
                                 <BriefcaseIcon className='text-blue-400 w-5 h-5'/>
-                                <p>Maintenance</p>
+                                 <p className='text-gray-400'>Maintenance</p>
                             </button>
                         </div>
 
-                        <div className="mt-3 sm:flex sm:h-72 border">
+                        <div className="mt-3 sm:flex sm:h-72 border border-gray-800">
                             <div className="sm:w-1/2 order-1">
                                 <img className='h-72 w-full object-cover' src="https://preview.cruip.com/open-pro/images/tabs-image-01.jpg" alt="www" />
                             </div>
@@ -195,8 +195,8 @@ export default function LandingPage() {
                         </div>
                     </div>
 
-                    <div className="sm:py-10 py-5 sm:px-24 px-5 flex-col flex items-center border-t">
-                    <h3 className="text-3xl font-bold text-center justify-center">
+                    <div className="sm:py-10 py-5 sm:px-24 px-5 flex-col flex items-center border-t border-gray-800">
+                    <h3 className="text-3xl font-bold text-center justify-center text-gray-300">
                         From the big picture to every tiny detail, we got you covered.
                     </h3>
 
@@ -209,29 +209,29 @@ export default function LandingPage() {
                         <div>
                             <div className="flex space-x-1 items-center">
                             <div className='w-2 h-2 rounded-full bg-blue-400'></div>
-                            <h1 className="text-lg font-bold">
+                            <h1 className="text-lg font-bold text-gray-300">
                                 For Developers
                             </h1>
                             </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
+                            <p className='text-gray-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
                         </div>
                         <div>
                             <div className="flex space-x-1 items-center">
                             <div className='w-2 h-2 rounded-full bg-red-400'></div>
-                            <h1 className="text-lg font-bold">
+                            <h1 className="text-lg font-bold text-gray-300">
                                 For Developers
                             </h1>
                             </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
+                            <p className='text-gray-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
                         </div>
                         <div>
                             <div className="flex space-x-1 items-center">
                             <div className='w-2 h-2 rounded-full bg-yellow-400'></div>
-                            <h1 className="text-lg font-bold">
+                            <h1 className="text-lg font-bold text-gray-300">
                                 For Developers
                             </h1>
                             </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
+                            <p className='text-gray-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
                         </div>
                         </div>
                     </div>
@@ -239,22 +239,22 @@ export default function LandingPage() {
 
                     {/* Blog section */}
 
-                    <div className='sm:px-24 px-5 sm:py-10 py-5 border-t'>
+                    <div className='sm:px-24 px-5 sm:py-10 py-5 border-t border-gray-800'>
                         <h1 className="text-3xl font-bold text-center">
                             Refreshing news for developers, designers and customers
                         </h1>
 
                         <div className="flex flex-wrap mt-10 space-y-3">
                             <div className="sm:p-4 md:w-1/3">
-                                <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
+                                <div className="h-full border border-gray-800 border-opacity-60 overflow-hidden">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://preview.cruip.com/open-pro/images/news-01.jpg" alt="blog"/>
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">MOBILE APP DEVELOPMENT</h2>
-                                    <h1 className="text-2xl font-semibold mb-3">Better UI & UIX for android applications</h1>
-                                    <p className="text-md mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h1 className="text-2xl font-semibold mb-3 text-gray-200">Better UI & UIX for android applications</h1>
+                                    <p className="text-md mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
-                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-200">
+                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
                                         Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
@@ -265,15 +265,15 @@ export default function LandingPage() {
                                 </div>
                             </div>
                             <div className="sm:p-4 md:w-1/3">
-                                <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
+                                <div className="h-full border border-gray-800 border-opacity-60 overflow-hidden">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://preview.cruip.com/open-pro/images/news-01.jpg" alt="blog"/>
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">MOBILE APP DEVELOPMENT</h2>
-                                    <h1 className="text-2xl font-semibold mb-3">Better UI & UIX for android applications</h1>
-                                    <p className="text-md mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h1 className="text-2xl font-semibold mb-3 text-gray-200">Better UI & UIX for android applications</h1>
+                                    <p className="text-md mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
-                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-200">
+                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
                                         Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
@@ -284,15 +284,15 @@ export default function LandingPage() {
                                 </div>
                             </div>
                             <div className="sm:p-4 md:w-1/3">
-                                <div className="h-full border border-gray-200 border-opacity-60 overflow-hidden">
+                                <div className="h-full border border-gray-800 border-opacity-60 overflow-hidden">
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://preview.cruip.com/open-pro/images/news-01.jpg" alt="blog"/>
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">MOBILE APP DEVELOPMENT</h2>
-                                    <h1 className="text-2xl font-semibold mb-3">Better UI & UIX for android applications</h1>
-                                    <p className="text-md mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h1 className="text-2xl font-semibold mb-3 text-gray-200">Better UI & UIX for android applications</h1>
+                                    <p className="text-md mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
-                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-200">
+                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
                                         Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
@@ -308,7 +308,7 @@ export default function LandingPage() {
                     {/* End of blog section */}
 
                     <div className="heropattern-circuitboard-blue-400 bg-repeat">
-                    <div className="bg-blue-400 sm:m-20 m-5 sm:p-20 p-5 sm:flex sm:space-x-10">
+                    <div className="bg-gray-900 sm:m-20 m-5 sm:p-20 p-5 sm:flex sm:space-x-10">
                         <div>
                         <div className="flex">
                             <h1 className='text-2xl text-white'>Stay in the loop</h1>
@@ -359,7 +359,7 @@ export default function LandingPage() {
 
                     <button 
                         onClick={()=> setShowMessageBubble(!showMessageBubble)}
-                        className="fixed focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 items-center flex justify-center  bottom-10 rounded-full border-8 border-blue-300 right-2 w-14 h-14 bg-blue-400">
+                        className="fixed focus:ring-2 focus:ring-offset-2 focus:ring-blue-300 items-center flex justify-center  bottom-10 rounded-full border-8 border-blue-400 right-2 w-14 h-14 bg-blue-500">
                         <ChatAltIcon className='text-white w-6 h-6'/>
                     </button>
 
