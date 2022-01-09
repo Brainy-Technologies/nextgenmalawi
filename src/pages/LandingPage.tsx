@@ -43,7 +43,7 @@ export default function LandingPage() {
                             <div className="rounded-md shadow">
                             <Link
                                 to="#"
-                                className="focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-white bg-blue-500 hover:bg-blue-400 duration-75 transition"
+                                className="focus:ring-offset-2 focus:ring-offset-transparent focus:ring-1 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-white bg-blue-500 hover:bg-blue-400 duration-75 transition"
                             >
                                 Get started
                             </Link>
@@ -51,7 +51,7 @@ export default function LandingPage() {
                             <div className="mt-3 sm:mt-0 sm:ml-3">
                             <Link
                                 to="#"
-                                className="focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-blue-400 bg-gray-800 hover:bg-gray-900"
+                                className="focus:ring-offset-2 focus:ring-offset-transparent focus:ring-1 focus:ring-blue-400 w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-none text-blue-400 bg-gray-800 hover:bg-gray-900"
                             >
                                 Create a project
                             </Link>
@@ -182,8 +182,8 @@ export default function LandingPage() {
                                 <img className='h-72 w-full object-cover' src="https://preview.cruip.com/open-pro/images/tabs-image-01.jpg" alt="www" />
                             </div>
                             <div className='sm:w-1/2 p-10 space-y-3'>
-                                <h1 className='text-lg font-semibold truncate'>Optimize and scale, easy to start</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h1 className='text-lg font-semibold truncate text-gray-200'>Optimize and scale, easy to start</h1>
+                                <p className='text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
                                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M5 12h14"></path>
@@ -240,7 +240,7 @@ export default function LandingPage() {
                     {/* Blog section */}
 
                     <div className='sm:px-24 px-5 sm:py-10 py-5 border-t border-gray-800'>
-                        <h1 className="text-3xl font-bold text-center">
+                        <h1 className="text-3xl font-bold text-center text-gray-300">
                             Refreshing news for developers, designers and customers
                         </h1>
 
@@ -254,7 +254,7 @@ export default function LandingPage() {
                                     <p className="text-md mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
-                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
+                                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
                                         Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
@@ -273,7 +273,7 @@ export default function LandingPage() {
                                     <p className="text-md mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
-                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
+                                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
                                         Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
@@ -292,7 +292,7 @@ export default function LandingPage() {
                                     <p className="text-md mb-3 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <img src="https://preview.cruip.com/open-pro/images/news-author-02.jpg" alt="guy" className="w-10 h-10 bject-cover rounded-full" />
-                                    <span className="text-gray-900 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
+                                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none pr-3 py-1 border-r-2 border-gray-800">
                                         Devin
                                     </span>
                                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">

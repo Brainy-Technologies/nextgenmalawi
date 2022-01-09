@@ -99,11 +99,12 @@ export default function LandingPageHeader() {
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="#">
-              <span className="sr-only">Icon</span>
+              {/* <span className="sr-only">Icon</span>
               <svg width="24" height="24" viewBox="0 0 64 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.5" y="2.5" width="43" height="40" stroke="#60a5fa" stroke-width="5"/>
                 <rect x="18.5" y="14.5" width="43" height="40" stroke="#60a5fa" stroke-width="5"/>
-              </svg>
+              </svg> */}
+              <img src={Icon} alt="app-icon" className="w-12 w-ato object-cover" />
             </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -292,14 +293,15 @@ export default function LandingPageHeader() {
           focus
           className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-none shadow-lg ring-1 ring-black ring-opacity-5 bg-black divide-y-2 divide-gray-50">
+          <div className="rounded-none shadow-lg ring-1 ring-black ring-opacity-5 bg-black divide-y-2 divide-gray-800">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <svg width="24" height="24" viewBox="0 0 64 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* <svg width="24" height="24" viewBox="0 0 64 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2.5" y="2.5" width="43" height="40" stroke="#60a5fa" stroke-width="5"/>
                   <rect x="18.5" y="14.5" width="43" height="40" stroke="#60a5fa" stroke-width="5"/>
-                </svg>
+                </svg> */}
+                  <img src={Icon} alt="app-icon" className="w-12 w-ato object-cover" />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-black rounded-none p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-400">
@@ -314,15 +316,17 @@ export default function LandingPageHeader() {
                     <Link
                       key={item.name}
                       to={item.to}
-                      className="-m-3 p-3 flex items-center rounded-none hover:bg-gray-50"
+                      className="-m-3 p-3 flex items-center rounded-none hover:bg-gray-900"
                     >
                       <item.icon
                         className="flex-shrink-0 h-6 w-6 text-blue-400"
                         aria-hidden="true"
                       />
-                      <span className="ml-3 text-base font-medium text-gray-900">
+                      <span className="ml-3 text-base font-medium text-gray-300">
                         {item.name}
+                        <span className="sr-only">Close menu</span>
                       </span>
+                      
                     </Link>
                   ))}
                 </nav>
@@ -332,14 +336,14 @@ export default function LandingPageHeader() {
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <Link
                   to="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-300 hover:text-gray-200"
                 >
                   Pricing
                 </Link>
 
                 <Link
                   to="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-300 hover:text-gray-200"
                 >
                   Docs
                 </Link>
@@ -347,7 +351,7 @@ export default function LandingPageHeader() {
                   <Link
                     key={item.name}
                     to={item.to}
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
+                    className="text-base font-medium text-gray-300 hover:text-gray-200"
                   >
                     {item.name}
                   </Link>
@@ -358,14 +362,8 @@ export default function LandingPageHeader() {
                   to="#"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-none shadow-sm text-base font-medium text-white bg-blue-400 hover:bg-blue-500"
                 >
-                  Sign up
+                  Create a project
                 </Link>
-                <p className="mt-6 text-center text-base font-medium text-gray-300">
-                  Existing customer?{" "}
-                  <Link to="#" className="text-blue-400 hover:text-blue-400">
-                    Sign in
-                  </Link>
-                </p>
               </div>
             </div>
           </div>
