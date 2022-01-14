@@ -34,10 +34,10 @@ export default function LandingPage() {
                     <main className="justify-center items-center flex flex-col">
                         <div className="sm:text-center lg:text-left">
                         <h1 className="text-3xl text-center font-bold">
-                            <span className="block xl:inline text-center text-gray-100">We are centuries beyond</span>
+                            <span style={{ fontFamily: 'Architects Daughter' }} className="block xl:inline text-center text-gray-100">Nextgenerations, centuries beyond</span>
                         </h1>
                         <p className="mt-3 text-lg text-center text-gray-300">
-                            Digitize your businesses/firms from manual or paper work to automated digitized systems. Grow your firm with us today!
+                            Digitize your businesses/firms from manual or paper work to automated digitized systems. Grow your firm with us today.
                         </p>
                         <div className="mt-5 sm:mt-8 sm:flex items-center justify-center">
                             <div className="rounded-md shadow">
@@ -357,11 +357,11 @@ export default function LandingPage() {
                         </div>
                     </div> : <></>}
 
-                    <button 
+                    {/* <button 
                         onClick={()=> setShowMessageBubble(!showMessageBubble)}
                         className="fixed focus:ring-2 focus:ring-offset-2 focus:ring-blue-300 items-center flex justify-center  bottom-10 rounded-full border-8 border-blue-400 right-2 w-14 h-14 bg-blue-500">
                         <ChatAltIcon className='text-white w-6 h-6'/>
-                    </button>
+                    </button> */}
 
                 </div>
 

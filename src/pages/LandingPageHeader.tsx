@@ -190,7 +190,7 @@ export default function LandingPageHeader() {
             </Popover>
 
             <Link
-              to="#"
+              to="/projects"
               className="text-base font-medium text-gray-300 hover:text-gray-100"
             >
               Projects
