@@ -34,7 +34,7 @@ export default function LandingPage() {
                     <main className="justify-center items-center flex flex-col">
                         <div className="sm:text-center lg:text-left">
                         <h1 className="text-3xl text-center font-bold">
-                            <span style={{ fontFamily: 'Architects Daughter' }} className="block xl:inline text-center text-gray-100">Nextgenerations, centuries beyond</span>
+                            <span className="block xl:inline text-center text-gray-100">Nextgenerations, centuries beyond</span>
                         </h1>
                         <p className="mt-3 text-lg text-center text-gray-300">
                             Digitize your businesses/firms from manual or paper work to automated digitized systems. Grow your firm with us today.
