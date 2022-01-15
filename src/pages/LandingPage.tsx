@@ -1,7 +1,6 @@
 import { 
     CheckIcon, 
     XIcon, 
-    ChatAltIcon, 
     DeviceMobileIcon, 
     BriefcaseIcon, 
     RssIcon, GlobeAltIcon, 
@@ -32,11 +31,11 @@ export default function LandingPage() {
             <div className='bg-black'>
                 <div className="sm:px-24 px-5 sm:py-10">
                     <main className="justify-center items-center flex flex-col">
-                        <div className="sm:text-center lg:text-left">
+                        <div className="sm:text-center lg:text-left sm:flex sm:flex-col sm:items-center">
                         <h1 className="text-3xl text-center font-bold">
-                            <span className="block xl:inline text-center text-gray-100">Nextgenerations, centuries beyond</span>
+                            <span className="block xl:inline text-center text-3xl font-bold text-gray-100">Nextgenerations, centuries beyond</span>
                         </h1>
-                        <p className="mt-3 text-lg text-center text-gray-300">
+                        <p className="mt-3 text-lg text-center text-gray-300 sm:w-3/5">
                             Digitize your businesses/firms from manual or paper work to automated digitized systems. Grow your firm with us today.
                         </p>
                         <div className="mt-5 sm:mt-8 sm:flex items-center justify-center">

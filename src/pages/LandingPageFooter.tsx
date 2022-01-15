@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import { ScrollToTop } from "../components/ScrollToTop";
 
 export default function LandingPageFooter() {
 
     return (
         <div className="bg-black">
+            <ScrollToTop/>
             <footer className="border-gray-800 body-font border-t">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-wrap md:text-left text-center order-first">

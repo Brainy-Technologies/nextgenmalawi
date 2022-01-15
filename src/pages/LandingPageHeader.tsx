@@ -98,7 +98,7 @@ export default function LandingPageHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <Link to="#">
+            <Link to="/">
               {/* <span className="sr-only">Icon</span>
               <svg width="24" height="24" viewBox="0 0 64 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.5" y="2.5" width="43" height="40" stroke="#60a5fa" stroke-width="5"/>
