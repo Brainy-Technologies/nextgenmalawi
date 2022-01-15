@@ -6,6 +6,7 @@ import HelpCenter from './pages/support/HelpCenter';
 import Projects from './pages/projects/Projects';
 import AboutUs from './pages/support/AboutUs';
 import ContactUs from './pages/support/ContactUs';
+import Events from './pages/support/Events';
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
       <Route path="/about-us" element={<AboutUs/>}/>
 
       <Route path="/contact-us" element={<ContactUs/>}/>
+
+      <Route path="/events" element={<Events/>}/>
 
     </Routes>
   );

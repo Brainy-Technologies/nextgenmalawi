@@ -77,7 +77,7 @@ const resources = [
     name: "Events",
     description:
       "Exiting software's coming your way, see the timelines.",
-    to: "#",
+    to: "/events",
     icon: CalendarIcon,
   },
   {
