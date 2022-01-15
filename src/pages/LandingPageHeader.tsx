@@ -63,7 +63,7 @@ const resources = [
     name: "Help Center",
     description:
       "Get all of your questions answered in our forums or contact support.",
-    to: "#",
+    to: "/help-center",
     icon: SupportIcon,
   },
   {
