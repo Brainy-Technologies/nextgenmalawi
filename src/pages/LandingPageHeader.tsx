@@ -81,9 +81,9 @@ const resources = [
     icon: CalendarIcon,
   },
   {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    to: "#",
+    name: "Contact us",
+    description: "Send us a message to get in touch with us",
+    to: "/contact-us",
     icon: ShieldCheckIcon,
   },
 ];

@@ -5,6 +5,7 @@ import CreateProject from './pages/projects/CreateProject';
 import HelpCenter from './pages/support/HelpCenter';
 import Projects from './pages/projects/Projects';
 import AboutUs from './pages/support/AboutUs';
+import ContactUs from './pages/support/ContactUs';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
       <Route path="/help-center" element={<HelpCenter/>}/>
 
       <Route path="/about-us" element={<AboutUs/>}/>
+
+      <Route path="/contact-us" element={<ContactUs/>}/>
 
     </Routes>
   );
