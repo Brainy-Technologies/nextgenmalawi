@@ -92,7 +92,36 @@ export default function HelpCenter() {
                     </div>
 
                     <div className={openTab === 3 ? "block" : "hidden"} id="link1">
-                        <h3 className="text-3xl font-bold text-gray-300">Billing</h3>
+                        <div className="">
+                            <div className="flex flex-col w-full mb-5">
+                            <h1 className="text-3xl font-bold text-gray-300 mb-3">Prices for software development</h1>
+                            <p className="leading-relaxed text-base text-gray-300">Simple, transparent pricing. Get the Open PRO plan that fits your needs at a special introductory price.</p>
+                            </div>
+                            <div className="w-full overflow-auto">
+                            <table className="table-auto w-full text-left whitespace-no-wrap">
+                                <thead>
+                                <tr>
+                                    <th className="px-4 py-3 font-medium text-gray-200 bg-blue-500">Category</th>
+                                    <th className="px-4 py-3 font-medium text-gray-200 bg-blue-500">Platform</th>
+                                    <th className="px-4 py-3 font-medium text-gray-200 bg-blue-500">Duration</th>
+                                    <th className="px-4 py-3 font-medium text-gray-200 bg-blue-500">Price</th>
+                                    <th className="px-4 py-3 font-medium text-gray-200 bg-blue-500">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td className="px-4 py-3 text-gray-300">Mobile apps</td>
+                                    <td className="px-4 py-3 text-gray-300">Android</td>
+                                    <td className="px-4 py-3 text-gray-300">3 Months</td>
+                                    <td className="px-4 py-3 text-gray-300">MK2,000,000.00</td>
+                                    <td className="w-10 text-center">
+                                    <input name="plan" type="radio"/>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

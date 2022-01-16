@@ -3,7 +3,7 @@ import LandingPageFooter from '../LandingPageFooter'
 import LandingPageHeader from '../LandingPageHeader'
 
 import Poster from '../../assets/job-finder.png'
-import { CalendarIcon, DeviceMobileIcon, GlobeAltIcon, LocationMarkerIcon, PhoneIcon } from '@heroicons/react/outline'
+import { CalendarIcon, DeviceMobileIcon, LocationMarkerIcon } from '@heroicons/react/outline'
 import { StatusOnlineIcon } from '@heroicons/react/solid'
 
 export default function Events() {

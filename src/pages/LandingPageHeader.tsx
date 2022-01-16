@@ -12,6 +12,7 @@ import {
   PresentationChartLineIcon,
   RssIcon,
   ShieldCheckIcon,
+  ShoppingCartIcon,
   SunIcon,
   SupportIcon,
   XIcon,
@@ -270,11 +271,8 @@ export default function LandingPageHeader() {
             >
               Create a project
             </Link>
-            <Link
-              to="#"
-              className="ml-8 focus:ring-offset-2 focus:ring-2 focus:ring-blue-400 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-none shadow-sm text-base font-medium text-white bg-blue-400 hover:bg-blue-500"
-            >
-              Enquiry
+            <Link to='#order-cart'>
+              <ShoppingCartIcon className="w-5 h-5 text-gray-200 ml-3"/>
             </Link>
           </div>
         </div>

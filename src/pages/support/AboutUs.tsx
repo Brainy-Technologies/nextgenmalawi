@@ -1,4 +1,3 @@
-import { CheckCircleIcon } from '@heroicons/react/outline'
 import { BadgeCheckIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 import LandingPageFooter from '../LandingPageFooter'
