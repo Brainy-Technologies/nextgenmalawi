@@ -7,7 +7,7 @@ export default function AboutUs() {
     return (
         <div>
             <LandingPageHeader/>
-                <div className="bg-black px-24 py-10">
+                <div className="bg-black sm:px-24 px-5 sm:py-10 py-5">
                     <div>
                         <h3 className="text-gray-200 text-3xl text-center font-bold">
                         The story behind every project
@@ -22,13 +22,13 @@ export default function AboutUs() {
                         <h3 className="text-gray-200 text-3xl text-center font-bold">
                             Bringing the world's ideas to life
                         </h3>
-                        <p className="text-lg w-1/2 text-gray-300 text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p className="text-lg sm:w-1/2 text-gray-300 text-center mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         <div className="flex flex-col mt-3">
                             <div className='flex space-x-4'>
                                
                                 <div>
-                                    <div className='space-y-28 pt-2'>
+                                    <div className='sm:space-y-28 space-y-52 pt-2'>
                                         <p className="rounded-full text-sm bg-green-200 text-green-500 px-3 py-1 font-semibold">
                                             2020
                                         </p>
@@ -43,15 +43,15 @@ export default function AboutUs() {
                                 <div className='pt-5'>
                                     <div className='flex flex-col items-center'>
                                         <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                        <div style={{ width: 2 }} className="h-32 bg-gray-800 mt-1"></div>
+                                        <div style={{ width: 2 }} className="sm:h-32 h-56 bg-gray-800 mt-1"></div>
                                     </div>
                                     <div className='flex flex-col items-center mt-1'>
                                         <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                        <div style={{ width: 2 }} className="h-32 bg-gray-800 mt-1"></div>
+                                        <div style={{ width: 2 }} className="sm:h-32 h-56 bg-gray-800 mt-1"></div>
                                     </div>
                                     <div className='flex flex-col items-center mt-1'>
                                         <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                                        <div style={{ width: 2 }} className="h-32 bg-gray-800 mt-1"></div>
+                                        <div style={{ width: 2 }} className="sm:h-24 h-32 bg-gray-800 mt-1"></div>
                                         <div className="w-2 h-2 rounded-full bg-blue-400 border border-blue-300 ring-2 animate-ping"></div>
                                     </div>
                                 </div>
@@ -77,111 +77,78 @@ export default function AboutUs() {
                     </div>
 
                     {/* End of timeline */}
-
-                    <div className="mt-5 border-t border-gray-800 p-5">
-                        <h3 className="text-gray-200 text-3xl font-bold text-center">
-                            Our passionate team
-                        </h3>
-                        <p className="mt-3 text-lg text-gray-300">
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat.
-                        </p>
-
-                        <div className="mt-10 flex">
-                            <div className='space-y-2 w-1/4 flex flex-col items-center'>
-                                <img src="https://preview.cruip.com/open-pro/images/team-member-01.jpg" alt="co-founder" className="w-28 h-28 rounded-full object-cover" />
-                                <h3 className="text-gray-200 font-bold text-lg">Kelvin Chidothi</h3>
-                                <p className="text-gray-400 text-md">CEO & Founder</p>
-                                <div className="flex space-x-2">
-                                    <Link to='#' className="text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-400">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-500">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-cyan-400">
-                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                                    </svg>
-                                    </Link>
+                        <div className="border-t border-gray-800 mt-10 pt-10">
+                            <div className="flex flex-col text-center w-full mb-10">
+                            <h1 className="text-gray-200 text-3xl text-center font-bold mb-2">Our passionate team</h1>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-300">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+                            </div>
+                            <div className="flex flex-wrap -m-2">
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Kelvin Chidothi</h2>
+                                    <p className="text-gray-300">Founder & CEO</p>
+                                </div>
                                 </div>
                             </div>
-                            <div className='space-y-2 w-1/4 flex flex-col items-center'>
-                                <img src="https://preview.cruip.com/open-pro/images/team-member-01.jpg" alt="co-founder" className="w-28 h-28 rounded-full object-cover" />
-                                <h3 className="text-gray-200 font-bold text-lg">Kelvin Chidothi</h3>
-                                <p className="text-gray-400 text-md">CEO & Founder</p>
-                                <div className="flex space-x-2">
-                                    <Link to='#' className="text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-400">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-500">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-cyan-400">
-                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                                    </svg>
-                                    </Link>
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Jacqueline Jailosi</h2>
+                                    <p className="text-gray-300">Sales & Marketer</p>
+                                </div>
                                 </div>
                             </div>
-                            <div className='space-y-2 w-1/4 flex flex-col items-center'>
-                                <img src="https://preview.cruip.com/open-pro/images/team-member-01.jpg" alt="co-founder" className="w-28 h-28 rounded-full object-cover" />
-                                <h3 className="text-gray-200 font-bold text-lg">Kelvin Chidothi</h3>
-                                <p className="text-gray-400 text-md">CEO & Founder</p>
-                                <div className="flex space-x-2">
-                                    <Link to='#' className="text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-400">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-500">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-cyan-400">
-                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                                    </svg>
-                                    </Link>
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Steve Temani</h2>
+                                    <p className="text-gray-300">Web developer</p>
+                                </div>
                                 </div>
                             </div>
-                            <div className='space-y-2 w-1/4 flex flex-col items-center'>
-                                <img src="https://preview.cruip.com/open-pro/images/team-member-01.jpg" alt="co-founder" className="w-28 h-28 rounded-full object-cover" />
-                                <h3 className="text-gray-200 font-bold text-lg">Kelvin Chidothi</h3>
-                                <p className="text-gray-400 text-md">CEO & Founder</p>
-                                <div className="flex space-x-2">
-                                    <Link to='#' className="text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-400">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-blue-500">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                    </svg>
-                                    </Link>
-                                    <Link to='#' className="ml-3 text-gray-500 rounded-full bg-gray-900 p-1 hover:bg-gray-700 transition duration-150 hover:text-cyan-400">
-                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
-                                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                                    </svg>
-                                    </Link>
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Rodger Kumwanje</h2>
+                                    <p className="text-gray-300">Full Stack Developer</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Anthony Kamphantengo</h2>
+                                    <p className="text-gray-300">Web developer</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Mike Chitedze</h2>
+                                    <p className="text-gray-300">Systems Manager</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                                <div className="h-full flex items-center border-gray-800 border p-4 rounded-md">
+                                <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90"/>
+                                <div className="flex-grow">
+                                    <h2 className="text-gray-200 title-font font-medium">Bright</h2>
+                                    <p className="text-gray-300">Market Analyst</p>
+                                </div>
                                 </div>
                             </div>
                             
+                            </div>
                         </div>
-                    </div>
 
                     {/* End of the passionate team🔥 */}
 
@@ -192,7 +159,7 @@ export default function AboutUs() {
                         <p className="mt-3 text-lg text-gray-300">
                             Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.
                         </p>
-                        <div className="flex items-center justify-center w-1/2 mt-3 space-x-4">
+                        <div className="sm:flex items-center justify-center sm:w-1/2 mt-3 sm:space-x-4">
                             <div className="flex space-x-2 items-center">
                                 <BadgeCheckIcon className='w-5 h-5 text-green-400'/>
                                 <p className="text-lg text-gray-300">Team work spirit</p>
@@ -206,7 +173,7 @@ export default function AboutUs() {
                                 <p className="text-lg text-gray-300">Opportunity door</p>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center w-1/2 mt-3 space-x-4">
+                        <div className="sm:flex items-center justify-center sm:w-1/2 mt-3 sm:space-x-4">
                             <div className="flex space-x-2 items-center">
                                 <BadgeCheckIcon className='w-5 h-5 text-green-400'/>
                                 <p className="text-lg text-gray-300">Experience</p>
