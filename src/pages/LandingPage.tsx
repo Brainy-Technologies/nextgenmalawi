@@ -21,9 +21,40 @@ import User from '../assets/avatar.jpg'
 import LandingPageFooter from './LandingPageFooter'
 import LandingPageHeader from './LandingPageHeader'
 
+
+const tabsItems = [
+    {
+        id: 1,
+        title: 'Mobile apps',
+        icon: <DeviceMobileIcon className='text-blue-400 w-5 h-5'/>
+    },
+    {
+        id: 2,
+        title: 'Desktop apps',
+        icon: <DesktopComputerIcon className='text-blue-400 w-5 h-5'/>
+    },
+    {
+        id: 3,
+        title: 'Web development',
+        icon: <GlobeAltIcon className='text-blue-400 w-5 h-5'/>
+    },
+    {
+        id: 4,
+        title: 'USSD apps',
+        icon: <RssIcon className='text-blue-400 w-5 h-5'/>
+    },
+    {
+        id: 5,
+        title: 'Maintenance',
+        icon: <BriefcaseIcon className='text-blue-400 w-5 h-5'/>
+    },
+]
+
 export default function LandingPage() {
 
     const [showMessageBubble, setShowMessageBubble] = useState(false)
+
+    const [openTab, setOpenTab] = useState(1)
 
     return (
         <div>
@@ -67,6 +98,7 @@ export default function LandingPage() {
                     <h3 className="font-bold text-3xl text-center text-gray-100">
                         Exclusively for your software needs
                     </h3>
+                    <p className="m-2 text-lg text-center text-gray-300">Learn how to get started with software development with us.</p>
                     <div className="w-full sm:flex justify-center sm:px-24 px-5 sm:py-10 py-5 self-center">
                         <div className="sm:w-1/3 mb-3 flex flex-col justify-center items-center">
                             <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
@@ -74,7 +106,7 @@ export default function LandingPage() {
                             </div>
                             <h3 className="font-semibold text-lg mt-2 text-gray-200">Create a project</h3>
                             <p className='text-center text-gray-300'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odit perspiciatis ducimus temporibus optio perferendis quis illo harum recusandae, alias magni nostrum sunt nam. Vel sit praesentium amet iure quas?
+                                Start turning your idea to a working app by creating a project with us. Here explain all your needs briefly and provide all the necessary information.
                             </p>
                         </div>
                         <div className="sm:w-1/3 mb-3 flex flex-col justify-center items-center">
@@ -83,16 +115,16 @@ export default function LandingPage() {
                             </div>
                             <h3 className="font-semibold text-lg mt-2 text-gray-200">Fill project form</h3>
                             <p className='text-center text-gray-300'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro tenetur, quidem quae fugit dicta nisi illo commodi aspernatur? Ipsa repellat nam numquam mollitia voluptates reprehenderit perspiciatis a dignissimos tenetur?
+                                On filling the project form, make sure you fill all the required fields marked (<span className='text-red-500'>*</span>). It takes 3-5 minutes to complete the form.
                             </p>
                         </div>
                         <div className="sm:w-1/3 flex flex-col justify-center items-center">
                             <div className="bg-blue-400 w-14 h-14 flex rounded hover:bg-blue-500 transition duration-150 items-center justify-center">
                                 <BadgeCheckIcon className='w-8 h-8 text-white hover:scale-75'/>
                             </div>
-                            <h3 className="font-semibold text-lg mt-2 text-gray-200">Submit</h3>
+                            <h3 className="font-semibold text-lg mt-2 text-gray-200">Submit your project</h3>
                             <p className='text-center text-gray-300'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam voluptatum quasi culpa maiores, dignissimos at nam ipsa animi? Quae, aperiam sequi vel quaerat numquam consectetur ea error nobis magnam.
+                                After filling, submit your form. You will get a confirmatory email for your project creation and all other instructions. Good luck!
                             </p>
                         </div>
                     </div>
@@ -102,14 +134,14 @@ export default function LandingPage() {
                     <div className='border-t border-gray-800 pt-10'>
                 
                     <div className="w-full sm:flex mt-3 mb-3 space-x-4 border-b border-gray-800 pb-10">
-                        <div className="sm:w-2/5 pb-3 justify-center flex items-center object-cover bg-cover" style={{ backgroundImage: `url('https://www.incimages.com/uploaded_files/image/1920x1080/IN0316LPO03-web_80434.jpg')` }}>
+                        <div className="sm:w-2/5 pb-3 justify-center flex items-center object-cover bg-cover bg-opacity-50" style={{ backgroundImage: `url('https://www.incimages.com/uploaded_files/image/1920x1080/IN0316LPO03-web_80434.jpg')` }}>
                             <div className="w-28 h-28 m-10 transition-all duration-150 border-8 border-blue-400 bg-blue-500 rounded-full ring-8"></div>
                         </div>
                         <div className="sm:w-3/5 space-y-2">
-                            <h1 className="text-blue-400 text-lg" style={{ fontFamily: 'Architects Daughter' }}>Lightening fast workflow</h1>
-                            <h3 className="text-2xl font-bold text-relaxed text-gray-200">Say hello to this approach</h3>
+                            <h1 className="text-blue-400 text-lg" style={{ fontFamily: 'Architects Daughter' }}>Smooth-Lightening fast workflow</h1>
+                            <h3 className="text-2xl font-bold text-relaxed text-gray-200">Say hello to this approach👋</h3>
                             <p className='text-gray-300'>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                                Building software in steps which are sufficient. Worried about duration? Set dates to when you want to see your working prototypes.
                             </p>
                             <div className="flex flex-wrap space-x-3">
                                 <div className="flex items-center space-x-2">
@@ -148,49 +180,100 @@ export default function LandingPage() {
                     </div>
                     </div>
 
+                    {/* Goals section */}
+
                     <div className='pt-10 pb-10'>
                         <h1 className="antialiased font-bold text-3xl text-center decoration-8 text-gray-100">
                             Our goals in software development
                         </h1>
-                        <p className="mt-2 text-center self-center leading-8 justify-center text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.</p>
+                        <p className="mt-2 text-center self-center leading-8 justify-center text-gray-400">We anticipate great visions in all aspects of software development.</p>
                         <div className="flex flex-wrap flex-row space-y-2 sm:space-x-5 space-x-2 items-center justify-center mt-2">
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
-                                <DeviceMobileIcon className='text-blue-400 w-5 h-5'/>
-                                 <p className='text-gray-400'>Mobile apps</p>
-                            </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
-                                <DesktopComputerIcon className='text-blue-400 w-5 h-5'/>
-                                 <p className='text-gray-400'>Desktop apps</p>
-                            </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
-                                <GlobeAltIcon className='text-blue-400 w-5 h-5'/>
-                                 <p className='text-gray-400'>Web development</p>
-                            </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
-                                <RssIcon className='text-blue-400 w-5 h-5'/>
-                                 <p className='text-gray-400'>USSD apps</p>
-                            </button>
-                            <button className="focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center">
-                                <BriefcaseIcon className='text-blue-400 w-5 h-5'/>
-                                 <p className='text-gray-400'>Maintenance</p>
-                            </button>
+                            {
+                                tabsItems.map((item, index) => (
+                                    <button key={index} onClick={() => setOpenTab(item.id)} className={openTab === item.id ? "ring-2 ring-blue-400 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-900 rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center" : "rounded-full p-2 bg-gray-900 flex space-x-2 flex-row items-center justify-center"}>
+                                        {item.icon}
+                                        <p className='text-gray-400'>{item.title}</p>
+                                    </button>
+                                ))
+                            }
                         </div>
 
                         <div className="mt-3 sm:flex sm:h-72 border border-gray-800">
-                            <div className="sm:w-1/2 order-1">
-                                <img className='h-72 w-full object-cover' src="https://preview.cruip.com/open-pro/images/tabs-image-01.jpg" alt="www" />
+                            <div className={openTab === 1 ? 'flex' : 'hidden'}>
+                                <div className="sm:w-1/2 order-1">
+                                    <img className='h-72 w-full object-cover' src="https://fscl01.fonpit.de/userfiles/7687254/image/Best_Android_Apps_2021-w1400h1050.jpg" alt="www" />
+                                </div>
+                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                    <h1 className='text-lg font-semibold truncate text-gray-200'>Fast, scalable and maintenable cross-platform apps</h1>
+                                    <p className='text-gray-400'>We aim to provide best mobile app development (in all platforms) that are scalable, optimized, fast-networking, impressive user interface as well as easy to maintain. Great news for both iOS and Android users across the world.</p>
+                                    <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <div className='sm:w-1/2 p-10 space-y-3'>
-                                <h1 className='text-lg font-semibold truncate text-gray-200'>Optimize and scale, easy to start</h1>
-                                <p className='text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
-                                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </button>
+                            <div className={openTab === 2 ? 'flex' : 'hidden'}>
+                                <div className="sm:w-1/2 order-1">
+                                    <img className='h-72 w-full object-cover' src="https://miro.medium.com/max/1400/1*0e9WHwH_j_Lic8hW_KriwA@2x.png" alt="desktop-app" />
+                                </div>
+                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                    <h1 className='text-lg font-semibold truncate text-gray-200'>Cross-platform desktop apps</h1>
+                                    <p className='text-gray-400'>Desktop applications for home, business and others in all fields. Reach out to us for a great experience with desktop applications.</p>
+                                    <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            
+                            <div className={openTab === 3 ? 'flex' : 'hidden'}>
+                                <div className="sm:w-1/2 order-1">
+                                    <img className='h-72 w-full object-cover' src="https://sociable.co/wp-content/uploads/2019/08/url-web-browser-1280x720.jpg" alt="web-browsing" />
+                                </div>
+                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                    <h1 className='text-lg font-semibold truncate text-gray-200'>Browser wherever you are</h1>
+                                    <p className='text-gray-400'>Across the world wide web, browse websites and web sites at any time. We aim to develop fast-impressive websites and web apps with great architect and best tech stark's.</p>
+                                    <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className={openTab === 4 ? 'flex' : 'hidden'}>
+                                <div className="sm:w-1/2 order-1">
+                                    <img className='h-72 w-full object-cover' src="https://i0.wp.com/www.ictworks.org/wp-content/uploads/2018/08/ussd-ict4d.png" alt="ussd-apps" />
+                                </div>
+                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                    <h1 className='text-lg font-semibold truncate text-gray-200'>Software for all operating systems</h1>
+                                    <p className='text-gray-400'>Software is not only for bigger screens only. We aim to provide USSD apps to GSM devices to allow user-interaction same way as smartphones and other portable high-tech devices.</p>
+                                    <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className={openTab === 5 ? 'flex' : 'hidden'}>
+                                <div className="sm:w-1/2 order-1">
+                                    <img className='h-72 w-full object-cover' src="https://graffersid.com/wp-content/uploads/2020/02/ux-ui-1024x529.png" alt="ui-uix" />
+                                </div>
+                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                    <h1 className='text-lg font-semibold truncate text-gray-200'>Feeling a little re-innovative</h1>
+                                    <p className='text-gray-400'>Renovate your software base code, your UI & UIX, networking etc to a more advanced one with us. Our experts are specialized in maintenance of any code base of any language. Figma, Adobe XD, Dribble, Pinterest? We convert any UI & UIX into a working infrastructrue.</p>
+                                    <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -204,7 +287,7 @@ export default function LandingPage() {
                         <img className='mt-10' src="https://preview.cruip.com/open-pro/images/features-02-image.png" alt="work" />
                         </div>
                         <div className="sm:w-1/2 py-10 sm:space-y-3">
-                        <p className='text-lg text-blue-400' style={{ fontFamily: 'Architects Daughter' }}>Be the change you want to see</p>
+                        <p className='text-lg text-blue-400' style={{ fontFamily: 'Architects Daughter' }}>Start the change you want to see</p>
                         <div>
                             <div className="flex space-x-1 items-center">
                             <div className='w-2 h-2 rounded-full bg-blue-400'></div>
@@ -212,25 +295,25 @@ export default function LandingPage() {
                                 For Developers
                             </h1>
                             </div>
-                            <p className='text-gray-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
+                            <p className='text-gray-400'>Join our Nextgenerations team for a better software development experience. Build all software in all categories and learn interactive development with us. Feel free, you are all welcome.</p>
                         </div>
                         <div>
                             <div className="flex space-x-1 items-center">
                             <div className='w-2 h-2 rounded-full bg-red-400'></div>
                             <h1 className="text-lg font-bold text-gray-300">
-                                For Developers
+                                For Designers
                             </h1>
                             </div>
-                            <p className='text-gray-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
+                            <p className='text-gray-400'>Wanting to put your designing skills to a test? Do you have a design you would want to turn it into a real life software? Join us in development and let's turn your vision into reality.</p>
                         </div>
                         <div>
                             <div className="flex space-x-1 items-center">
                             <div className='w-2 h-2 rounded-full bg-yellow-400'></div>
                             <h1 className="text-lg font-bold text-gray-300">
-                                For Developers
+                                For Customers
                             </h1>
                             </div>
-                            <p className='text-gray-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint iusto, minima dolore obcaecati enim minus eum fuga voluptatum? Sit incidunt velit nemo eius officiis! Laborum tenetur maiores enim sunt.</p>
+                            <p className='text-gray-400'>Let's put a start of your idea. What software would you want us to build for you? Start your project by clicking on create project. Fill the form and submit and your software is on your way.</p>
                         </div>
                         </div>
                     </div>
