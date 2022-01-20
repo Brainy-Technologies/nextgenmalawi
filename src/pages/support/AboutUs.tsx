@@ -1,5 +1,4 @@
 import { BadgeCheckIcon } from '@heroicons/react/solid'
-import { Link } from 'react-router-dom'
 import LandingPageFooter from '../LandingPageFooter'
 import LandingPageHeader from '../LandingPageHeader'
 
