@@ -199,11 +199,11 @@ export default function LandingPage() {
                         </div>
 
                         <div className="mt-3 sm:flex sm:h-72 border border-gray-800">
-                            <div className={openTab === 1 ? 'flex' : 'hidden'}>
+                            <div className={openTab === 1 ? 'flex flex-col' : 'hidden'}>
                                 <div className="sm:w-1/2 order-1">
                                     <img className='h-72 w-full object-cover' src="https://fscl01.fonpit.de/userfiles/7687254/image/Best_Android_Apps_2021-w1400h1050.jpg" alt="www" />
                                 </div>
-                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                <div className='sm:w-1/2 p-10 space-y-3 order-2'>
                                     <h1 className='text-lg font-semibold truncate text-gray-200'>Fast, scalable and maintenable cross-platform apps</h1>
                                     <p className='text-gray-400'>We aim to provide best mobile app development (in all platforms) that are scalable, optimized, fast-networking, impressive user interface as well as easy to maintain. Great news for both iOS and Android users across the world.</p>
                                     <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
@@ -214,11 +214,11 @@ export default function LandingPage() {
                                     </button>
                                 </div>
                             </div>
-                            <div className={openTab === 2 ? 'flex' : 'hidden'}>
+                            <div className={openTab === 2 ? 'flex flex-col' : 'hidden'}>
                                 <div className="sm:w-1/2 order-1">
                                     <img className='h-72 w-full object-cover' src="https://miro.medium.com/max/1400/1*0e9WHwH_j_Lic8hW_KriwA@2x.png" alt="desktop-app" />
                                 </div>
-                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                <div className='sm:w-1/2 p-10 space-y-3 order-2'>
                                     <h1 className='text-lg font-semibold truncate text-gray-200'>Cross-platform desktop apps</h1>
                                     <p className='text-gray-400'>Desktop applications for home, business and others in all fields. Reach out to us for a great experience with desktop applications.</p>
                                     <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
@@ -229,11 +229,11 @@ export default function LandingPage() {
                                     </button>
                                 </div>
                             </div>
-                            <div className={openTab === 3 ? 'flex' : 'hidden'}>
+                            <div className={openTab === 3 ? 'flex flex-col' : 'hidden'}>
                                 <div className="sm:w-1/2 order-1">
                                     <img className='h-72 w-full object-cover' src="https://sociable.co/wp-content/uploads/2019/08/url-web-browser-1280x720.jpg" alt="web-browsing" />
                                 </div>
-                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                <div className='sm:w-1/2 p-10 space-y-3 order-2'>
                                     <h1 className='text-lg font-semibold truncate text-gray-200'>Browser wherever you are</h1>
                                     <p className='text-gray-400'>Across the world wide web, browse websites and web sites at any time. We aim to develop fast-impressive websites and web apps with great architect and best tech stark's.</p>
                                     <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
@@ -244,11 +244,11 @@ export default function LandingPage() {
                                     </button>
                                 </div>
                             </div>
-                            <div className={openTab === 4 ? 'flex' : 'hidden'}>
+                            <div className={openTab === 4 ? 'flex flex-col' : 'hidden'}>
                                 <div className="sm:w-1/2 order-1">
                                     <img className='h-72 w-full object-cover' src="https://i0.wp.com/www.ictworks.org/wp-content/uploads/2018/08/ussd-ict4d.png" alt="ussd-apps" />
                                 </div>
-                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                <div className='sm:w-1/2 p-10 space-y-3 order-2'>
                                     <h1 className='text-lg font-semibold truncate text-gray-200'>Software for all operating systems</h1>
                                     <p className='text-gray-400'>Software is not only for bigger screens only. We aim to provide USSD apps to GSM devices to allow user-interaction same way as smartphones and other portable high-tech devices.</p>
                                     <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
@@ -259,11 +259,11 @@ export default function LandingPage() {
                                     </button>
                                 </div>
                             </div>
-                            <div className={openTab === 5 ? 'flex' : 'hidden'}>
+                            <div className={openTab === 5 ? 'flex flex-col' : 'hidden'}>
                                 <div className="sm:w-1/2 order-1">
                                     <img className='h-72 w-full object-cover' src="https://graffersid.com/wp-content/uploads/2020/02/ux-ui-1024x529.png" alt="ui-uix" />
                                 </div>
-                                <div className='sm:w-1/2 p-10 space-y-3'>
+                                <div className='sm:w-1/2 p-10 space-y-3 order-2'>
                                     <h1 className='text-lg font-semibold truncate text-gray-200'>Feeling a little re-innovative</h1>
                                     <p className='text-gray-400'>Renovate your software base code, your UI & UIX, networking etc to a more advanced one with us. Our experts are specialized in maintenance of any code base of any language. Figma, Adobe XD, Dribble, Pinterest? We convert any UI & UIX into a working infrastructrue.</p>
                                     <button className='bg-blue-400 flex items-center py-2 px-3 text-white hover:bg-blue-500 transition duration-200 focus:ring-2 focus:ring-offset-1 focus:ring-blue-400'>Learn more 
